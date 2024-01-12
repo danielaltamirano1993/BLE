@@ -1,4 +1,4 @@
-import React, { FC, useCallback } from 'react';
+import React, { FC, useCallback } from "react";
 import {
   FlatList,
   ListRenderItemInfo,
@@ -7,8 +7,8 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
-} from 'react-native';
-import { Device } from 'react-native-ble-plx';
+} from "react-native";
+import { Device } from "react-native-ble-plx";
 
 type DeviceModalListItemProps = {
   item: ListRenderItemInfo<Device>;
@@ -81,35 +81,35 @@ const DeviceModal: FC<DeviceModalProps> = (props) => {
 const modalStyle = StyleSheet.create({
   modalContainer: {
     flex: 1,
-    backgroundColor: '#f2f2f2',
+    backgroundColor: "#f2f2f2",
   },
   modalFlatlistContiner: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
   },
   modalCellOutline: {
     borderWidth: 1,
-    borderColor: 'black',
-    alignItems: 'center',
+    borderColor: "black",
+    alignItems: "center",
     marginHorizontal: 20,
     paddingVertical: 15,
     borderRadius: 8,
   },
   modalTitle: {
     flex: 1,
-    backgroundColor: '#f2f2f2',
+    backgroundColor: "#f2f2f2",
   },
   modalTitleText: {
     marginTop: 40,
     fontSize: 30,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginHorizontal: 20,
-    textAlign: 'center',
+    textAlign: "center",
   },
   ctaButton: {
-    backgroundColor: 'purple',
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "#FF6060",
+    justifyContent: "center",
+    alignItems: "center",
     height: 50,
     marginHorizontal: 20,
     marginBottom: 5,
@@ -117,8 +117,8 @@ const modalStyle = StyleSheet.create({
   },
   ctaButtonText: {
     fontSize: 18,
-    fontWeight: 'bold',
-    color: 'white',
+    fontWeight: "bold",
+    color: "white",
   },
 });
 
